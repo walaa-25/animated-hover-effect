@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+nav{
+    
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav .photo{
+    width: 15%;
+    cursor: pointer;
+}
+nav ul{
+    display: inline-flex;
+}
+nav ul li{
+    list-style: none;
+    padding: 30px 30px;
+    cursor: pointer;
+    font-weight: 700;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    padding: 10px;
+}
+nav ul li a::before{
+    width: 100%;
+    height: 0px;
+    content: ' ';
+    background-color: #d9f688;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    
+    bottom: -5px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: height .8s;
+}
+.mun{
+    width: 7%;
+    height: 40px;
+    margin: 30px;
+}
+nav ul li a:hover:before{
+height: 85px;
+}
+
+    
+
+.contact{
+    width: 50%;
+}
+.contact .first{
+    margin: 60px;
+    padding: 20px;
+    line-height: 1.4;
+    font-weight: 700;
+    font-size: 40px;
+    
+}
+.contact a{
+    text-decoration: none;
+    color: black;
+    margin: 60px;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: #d9f688;
+    padding: 20px 35px;
+    border-radius: 35px;
+}
+
+.right .image{
+    position: absolute;
+  left: 55%;
+  bottom: 90px;
+}
+.right .two{
+    position: absolute;
+    width: 230px;
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, .1);
+    bottom: 20%;
+    left: 50%;
+}
